@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light theme */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210 40% 98%), hsl(210 40% 96%));
+    --gradient-mesh: radial-gradient(at 27% 37%, hsl(217 91% 60% / 0.08) 0px, transparent 50%),
+                     radial-gradient(at 97% 21%, hsl(262 83% 58% / 0.08) 0px, transparent 50%),
+                     radial-gradient(at 52% 99%, hsl(217 91% 60% / 0.05) 0px, transparent 50%);
+    
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.15);
+    --shadow-card: 0 8px 24px hsl(0 0% 0% / 0.08);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 26% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 24% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 24% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 14%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 217 91% 60%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 24% 8%), hsl(220 20% 14%));
+    --gradient-mesh: radial-gradient(at 27% 37%, hsl(217 91% 60% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 97% 21%, hsl(262 83% 58% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 52% 99%, hsl(217 91% 60% / 0.1) 0px, transparent 50%);
+    
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 8px 24px hsl(220 26% 6% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px hsl(217 91% 60% / 0.3);
+    }
+    to {
+      box-shadow: 0 0 30px hsl(217 91% 60% / 0.6), 0 0 40px hsl(262 83% 58% / 0.4);
+    }
+  }
+
+  /* Micro-interactions */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_20px_hsl(217_91%_60%_/_0.4)];
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
+  }
+}

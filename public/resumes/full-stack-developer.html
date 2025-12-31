@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikhil Nakashe - Full Stack Developer Resume</title>
+    <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Aileron", sans-serif;
+        font-size: 10pt;
+        line-height: 1.4;
+        color: #575757;
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.4in;
+        background: white;
+      }
+      .header {
+        margin-bottom: 12px;
+        border-bottom: 2px solid #575757;
+        padding-bottom: 8px;
+      }
+      .name {
+        font-size: 22pt;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #333;
+      }
+      .title {
+        font-size: 10pt;
+        color: #575757;
+        letter-spacing: 1px;
+        margin-top: 2px;
+      }
+      .contact-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6px;
+        font-size: 9pt;
+      }
+      .contact-row a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      .two-column {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+      }
+      .section-title {
+        font-size: 11pt;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #575757;
+        padding-bottom: 3px;
+        margin: 12px 0 8px 0;
+        color: #333;
+      }
+      .profile-text {
+        font-size: 9.5pt;
+        text-align: justify;
+      }
+      .edu-entry {
+        margin-bottom: 8px;
+      }
+      .edu-date {
+        font-size: 9pt;
+        color: #575757;
+      }
+      .edu-school {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #333;
+      }
+      .edu-degree {
+        font-size: 9pt;
+      }
+      .job {
+        margin-bottom: 14px;
+      }
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .job-title {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #333;
+      }
+      .job-date {
+        font-size: 9pt;
+        color: #575757;
+      }
+      ul {
+        padding-left: 16px;
+        margin-top: 4px;
+      }
+      li {
+        margin-bottom: 3px;
+        font-size: 9pt;
+      }
+      li strong {
+        font-weight: 600;
+        color: #333;
+      }
+      .project {
+        margin-bottom: 10px;
+      }
+      .project-title {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #0066cc;
+      }
+      .project-tech {
+        font-size: 8pt;
+        color: #575757;
+        font-style: italic;
+        margin-bottom: 3px;
+      }
+      .skills-section {
+        font-size: 9pt;
+        line-height: 1.5;
+      }
+      .skills-section strong {
+        color: #333;
+      }
+      @media print {
+        body {
+          padding: 0.3in;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="name">NIKHIL NAKASHE</div>
+      <div class="title">FULL STACK DEVELOPER</div>
+      <div class="contact-row">
+        <span>📞 +91-9664623766</span>
+        <span>✉️ nikhilnakashe@gmail.com</span>
+        <span
+          ><a href="https://www.linkedin.com/in/nikhil-nakashe"
+            >linkedin.com/in/nikhil-nakashe</a
+          ></span
+        >
+        <span
+          ><a href="https://nikhilnakashe.netlify.app"
+            >nikhilnakashe.netlify.app</a
+          ></span
+        >
+      </div>
+    </div>
+
+    <div class="two-column">
+      <div class="left-column">
+        <div class="section-title">TECHNICAL SKILLS</div>
+        <div class="skills-section">
+          <p>
+            <strong>Frontend:</strong> React.js, Angular, JavaScript,
+            TypeScript, HTML5, CSS3
+          </p>
+          <p><strong>Backend:</strong> Node.js, Python, FastAPI, Express.js</p>
+          <p><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL, Redis</p>
+          <p><strong>Cloud:</strong> AWS (ECS, Lambda, S3, RDS), Docker</p>
+          <p><strong>Messaging:</strong> Apache Kafka, RabbitMQ</p>
+          <p><strong>Tools:</strong> Git, Jenkins, Postman, SonarCloud</p>
+          <p><strong>Practices:</strong> REST APIs, Agile, TDD, Code Reviews</p>
+        </div>
+
+        <div class="section-title">EDUCATION</div>
+        <div class="edu-entry">
+          <div class="edu-date">Jun'17</div>
+          <div class="edu-school">UNIVERSITY OF MUMBAI</div>
+          <div class="edu-degree">Master in Computer Application (MCA)</div>
+        </div>
+
+        <div class="section-title">ACHIEVEMENTS</div>
+        <div class="skills-section">
+          <p>• Run the Gauntlet (Coding) Competition Winner - UMIT 2015</p>
+          <p>• 4x Employee of the Month at BookEventZ</p>
+          <p>• Increased venue inquiries by 40%</p>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="section-title">WORK EXPERIENCE</div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title"
+              >Technology Lead - Great Manager Institute</span
+            >
+            <span class="job-date">Nov 2019 - Present</span>
+          </div>
+          <ul>
+            <li>
+              Developed and maintained
+              <strong>React.js and Angular</strong> frontends for enterprise B2B
+              applications serving <strong>200k+ concurrent users</strong>.
+            </li>
+            <li>
+              Built and deployed a
+              <strong>multi-agent Conversational AI</strong> interface using
+              FastAPI, LangGraph, and LangChain, improving user engagement by
+              <strong>40%</strong>.
+            </li>
+            <li>
+              Architected and migrated core services from
+              <strong>Laravel to Node.js</strong>, improving API efficiency by
+              <strong>20%</strong> (response time: 600ms → 400ms).
+            </li>
+            <li>
+              Developed <strong>real-time dashboards</strong> with interactive
+              data visualizations for leadership analytics using Python and
+              PostgreSQL.
+            </li>
+            <li>
+              Built <strong>AI-powered Nudge Engine</strong> integrating OpenAI
+              + PostHog to deliver personalized user experiences, increasing
+              engagement by <strong>27%</strong>.
+            </li>
+            <li>
+              Designed and implemented <strong>RESTful APIs</strong> using
+              Node.js and FastAPI with comprehensive documentation and testing.
+            </li>
+            <li>
+              Led daily scrum ceremonies, code reviews, and cross-functional
+              collaboration from requirements to production.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title"
+              >Senior Software Engineer - BookEventZ.com</span
+            >
+            <span class="job-date">Dec 2016 - Nov 2019</span>
+          </div>
+          <ul>
+            <li>
+              Architected and built a dynamic
+              <strong>User Dashboard module</strong> on the existing website,
+              improving user engagement and sales team productivity.
+            </li>
+            <li>
+              Developed smart <strong>Venue Suggestion API</strong> that
+              personalized venue recommendations based on customer preferences,
+              boosting conversion rates.
+            </li>
+            <li>
+              Optimized the <strong>Venue Listing API</strong>, a core component
+              on the website's Listing Page, increasing flagship venue inquiries
+              by <strong>40%</strong>.
+            </li>
+            <li>
+              Designed and deployed <strong>two Android apps</strong> using Java
+              for remote business development teams, empowering on-the-go access
+              to critical tools.
+            </li>
+            <li>
+              Built <strong>Auto-Assign system</strong> to automate inquiry
+              assignments to salespeople, ensuring faster lead responses.
+            </li>
+            <li>
+              Enhanced <strong>Autodial System</strong> on Asterisk server,
+              automating outbound calls and increasing sales team productivity.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-title">KEY PROJECTS</div>
+
+        <div class="project">
+          <div class="project-title">
+            AI Leadership Coach — Full Stack Conversational AI Platform
+          </div>
+          <div class="project-tech">
+            Tech: React.js, FastAPI, LangGraph, LangChain, OpenAI, PostgreSQL,
+            Docker
+          </div>
+          <ul>
+            <li>
+              Built <strong>interactive chat interface</strong> with real-time
+              message streaming and multi-agent routing with RAG-based
+              retrieval.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Real-time Leadership Analytics Dashboard
+          </div>
+          <div class="project-tech">
+            Tech: React.js, Python, PostgreSQL, Apache Airflow
+          </div>
+          <ul>
+            <li>
+              Designed interactive
+              <strong>data visualization dashboards</strong> with charts,
+              filters, and drill-down capabilities for executive leadership.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Nudge AI Engine</div>
+          <div class="project-tech">
+            Tech: OpenAI API, PostHog, Node.js, MySQL
+          </div>
+          <ul>
+            <li>
+              Built behavior-based nudge system using OpenAI API, increasing
+              product engagement by <strong>27%</strong> and response actions by
+              <strong>31%</strong>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
